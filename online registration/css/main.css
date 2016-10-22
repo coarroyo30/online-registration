@@ -1,0 +1,207 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: 'Old+Standard+TT', serif;
+}
+
+.heading {
+  text-align: center;
+}
+
+.heading h1 {
+  color: #fff;
+  background-color: #2C3449;
+  padding: 30px 0;
+  margin-top: 0;
+  text-transform: uppercase;
+  font-size: 120%;
+  font-weight: 400;
+}
+
+.heading h2 {
+  font-size: 130%;
+}
+
+.heading p {
+  color: #AEAEAE;
+  padding: 0 20px 40px 20px;
+  font-size: 110%;
+  border-bottom: 4px solid black;
+  margin: 0 20px;
+}
+
+.personalInfo {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin: 0 8px;
+}
+
+.personalInfo label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input[placeholder="Required"] {
+  text-align: right;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="address"],
+select,
+textarea {
+  border: none;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  border-radius: 5px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+input[type="number"] {
+  border: none;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 50%;
+  border-radius: 5px;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="address"]:focus,
+select:focus,
+textarea:focus,
+input[type="number"]:focus {
+  border: 2px solid blue;
+}
+
+fieldset {
+  border: none;
+}
+
+.personalInfo legend {
+  padding-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 130%;
+}
+
+.newsformat legend {
+  padding-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 130%;
+}
+
+.newsformat {
+  padding: 0 10px;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+  margin: 0 10px 12px 0;
+}
+
+button {
+  padding: 19px 0 18px 0;
+  color: #FFF;
+  background-color: #63CBC3;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #63CBC3;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+}
+
+.end {
+  margin: 0 15px;
+  
+}
+
+.end p {
+  text-align: center;
+  font-style: italic;
+}
+
+/**************************
+
+  Media Queries
+
+**************************/
+
+@media (min-width:760px) {
+
+  .heading h2 {
+    padding-top: 50px;
+  }
+
+  .heading p {
+    padding-top: 5px;
+  }
+
+  .heading h2, .heading p {
+    margin: 0 125px;
+  }
+
+  .personalInfo legend {
+    margin: 20px 0;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="address"],
+  select,
+  input[type="number"] {
+    float: right;
+    width: 75%;
+  }
+
+ .personalInfo label {
+    float: left;
+    clear: both;
+    margin-top: 10px;
+  }
+
+  .personalInfo {
+    border-bottom: none;
+  }
+
+  .newsformat {
+    border-top: 2px solid black;
+    padding: 0;
+  }
+
+  .newsformat legend {
+    margin-top: 30px;
+  }
+
+  fieldset {
+    margin: 0 107px;
+  }
+
+  .end {
+    margin: 0 117px;
+  }
+
+}
